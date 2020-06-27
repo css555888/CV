@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+h1{
+    margin: 20px 0;
+}
+h4{
+    line-height: 25px;
+    margin: 20px 0;
+}
+span{
+    margin-right: 30px;
+    display: inline-block;
+}
+/* 大盒子设置外边的样式 */
+.container{
+    border: 1px solid black;
+    width: 800px;
+    height: 830px;
+    margin: 20px 10px ;
+    line-height: 50px;
+}
+/* 清除父元素浮动 */
+.container::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.header{
+    float: left;
+    width: 35%;
+    height: 100%;
+    text-align: center;
+    background-color:darkturquoise;
+    color: white;
+    font-size:20px ;
+}
+.main{
+    float: right;
+    margin-left: -10px;
+}

@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+a:visited{
+    color: blue;
+}
+h1{
+    margin: 20px 0;
+}
+/* 大盒子设置外边的样式 */
+.container{
+    border: 1px solid black;
+    width: 800px;
+    height: 920px;
+    margin: 20px 10px ;
+}
+span{
+    display: inline-block;
+    font-weight: bolder;
+    margin: 20px 30px 0px 0;
+    line-height: 5px;
+}
+/* 清除父元素浮动 */
+.float::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.header{
+    color: white;
+    font-size: 15px;
+    background-color: dimgrey;
+    margin-top: -20px;
+    height: 70px;
+    line-height: 70px;
+    text-indent: 20px;
+}
+.float{
+    border: 1px solid dimgray;
+}
+.float h2{
+    float: left;
+    height: 168px;
+    width: 130px;
+    line-height: 168px;
+    background-color: darkgrey;
+    font-size: 20px;
+    text-align: center;
+}
+.float p{
+    float: left;
+    margin-left: 20px;
+
+}
+
